@@ -66,3 +66,41 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.card {
+  border: 1px solid rgb(161, 211, 210);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  padding : 1.5em;
+  text-align: center;
+  margin: 20px;
+  max-width: 200px;
+  width: 100%;
+
+}
+
+.card .card-img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 20%;
+  margin-bottom: 5px;
+}
+
+.card .card-title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.card .card-des{
+  font-size: 1em;
+  margin: 0;
+}
+
+.btn {
+  background-color: hsl(200, 100%, 50%);
+  color : white;
+  padding : 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
