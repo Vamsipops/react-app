@@ -1,21 +1,18 @@
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
-import Food from './Food.jsx'
-import Card from './Card.jsx'
-import Button from './Button.jsx'
+import { useState } from 'react';
+import Header from './Header';
+import Stage1 from "./stage1/Stage1"; 
+import Stage2 from "./stage2/Stage2"; 
 
 function App() {
 
+  const [currentStage,setCurrentStage] = useState('stage1')
+
   return(
-    <>
-    
-    <Header/>
-    <Card/>
-    <Button/>
-    <Food/>
-    <Footer/>
-    
-    </>
+    <div>
+    <Header onNavigate={setCurrentStage} />
+    {currentStage === 'stage1' && <Stage1/>}
+    {currentStage === 'stage2' && <Stage2/>}
+    </div>
     
   );
 

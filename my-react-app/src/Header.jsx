@@ -1,21 +1,15 @@
-function Header(){
+
+function Header({onNavigate}){
 
     return(
-        <header>
-            <h1> Eda Monne</h1>
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
-            <hr/>
-        </header>
+        <nav>
+            <button onClick={() => onNavigate('stage1') }> Stage 1</button>
+            <button onClick={() => onNavigate('stage2') }> Stage 2</button>
+        </nav>
+
     );
 
 
 }
 
-export default Header;
+export default Header

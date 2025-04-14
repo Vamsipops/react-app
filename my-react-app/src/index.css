@@ -80,20 +80,34 @@ button:focus-visible {
 }
 
 .card .card-img {
-  max-width: 60%;
+  max-width: 70%;
   height: auto;
-  border-radius: 20%;
+  border-radius: 10%;
   margin-bottom: 5px;
 }
 
 .card .card-title {
   font-size: 1.5em;
+  font-family: Verdana, Tahoma, sans-serif;
   margin: 0;
 }
 
 .card .card-des{
   font-size: 1em;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1em;
   margin: 0;
+  
+}
+
+.card .card-button {
+  background-color: hsl(200, 100%, 50%);
+  color : white;
+  padding : 10px 20px;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  border: none;
+  cursor: pointer;
 }
 
 .btn {
@@ -103,4 +117,13 @@ button:focus-visible {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
