@@ -10,7 +10,7 @@ function Toggle(){
 
 
     return (
-        <div style={{ margin: '1rem', textAlign: 'center' }}>
+        <div style={{ margin: '20px', textAlign: 'left' }}>
             <h2>Let's Toggle some text</h2>
         <button className="btn" onClick={handleClick}>
             {

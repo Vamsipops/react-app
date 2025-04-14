@@ -13,14 +13,14 @@ function Greeting(){
     }
     return(
 
-        <div style={{ margin: '1rem', marginTop: '0', textAlign: 'center' }}>
+        <div style={{ margin: '20px', marginTop: '0', textAlign: 'left' }}>
             <h2> Please provide your Name</h2>
             <div>{
                     isSubmit?
                     <h3> welcome , <strong>{name}</strong> 👋</h3>
                     :(<>
                     <input
-                    style={{padding : '10px 20px',textAlign: 'center',  borderRadius: '5px', marginRight:'1em' }}
+                    style={{padding : '10px 20px',textAlign: 'left',  borderRadius: '5px', marginRight:'1em' }}
                     type = 'text'
                     value={name}
                     onChange = {handlecChnage}

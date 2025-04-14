@@ -8,14 +8,13 @@ function App() {
   const [currentStage,setCurrentStage] = useState('stage1')
 
   return(
-    <div>
+    <>
     <Header onNavigate={setCurrentStage} />
     {currentStage === 'stage1' && <Stage1/>}
     {currentStage === 'stage2' && <Stage2/>}
-    </div>
+    </>
     
   );
-
 }
 
 export default App;
